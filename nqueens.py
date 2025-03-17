@@ -18,3 +18,9 @@ def solveNQueens(n):
 
                 # Recurse to the next row
                 solve_n_queens(row + 1)
+
+                # Backtrack: Remove the queen
+                chessboard[row][col] = '.'
+                cols.remove(col)
+                diagonal1.remove(row - col)
+                diagonal2.remove(row + col)
