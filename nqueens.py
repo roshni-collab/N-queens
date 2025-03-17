@@ -24,3 +24,8 @@ def solveNQueens(n):
                 cols.remove(col)
                 diagonal1.remove(row - col)
                 diagonal2.remove(row + col)
+    
+    # Initialize variables
+    solutions = []
+    chessboard = [['.'] * n for _ in range(n)]
+    cols, diagonal1, diagonal2 = set(), set(), set()
