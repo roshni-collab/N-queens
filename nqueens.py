@@ -32,3 +32,5 @@ def solveNQueens(n):
 
     # Start solving from the first row
     solve_n_queens(0)
+
+    return solutions
