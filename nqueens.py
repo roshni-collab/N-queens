@@ -10,3 +10,8 @@ def solveNQueens(n):
         
         for col in range(n):
             if is_safe(row, col):
+                 # Place the queen
+                chessboard[row][col] = 'Q'
+                cols.add(col)
+                diagonal1.add(row - col)
+                diagonal2.add(row + col) 
