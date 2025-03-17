@@ -15,3 +15,6 @@ def solveNQueens(n):
                 cols.add(col)
                 diagonal1.add(row - col)
                 diagonal2.add(row + col) 
+
+                # Recurse to the next row
+                solve_n_queens(row + 1)
