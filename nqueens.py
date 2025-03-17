@@ -9,3 +9,4 @@ def solveNQueens(n):
             return
         
         for col in range(n):
+            if is_safe(row, col):
