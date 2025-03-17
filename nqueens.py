@@ -29,3 +29,6 @@ def solveNQueens(n):
     solutions = []
     chessboard = [['.'] * n for _ in range(n)]
     cols, diagonal1, diagonal2 = set(), set(), set()
+
+    # Start solving from the first row
+    solve_n_queens(0)
