@@ -34,3 +34,7 @@ def solveNQueens(n):
     solve_n_queens(0)
 
     return solutions
+
+# Example Test Cases
+print(solveNQueens(4))
+print(solveNQueens(1))
